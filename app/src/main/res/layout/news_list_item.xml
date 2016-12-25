@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="2dp"
+    android:layout_margin="6dp"
+    android:weightSum="3"
+    android:foreground="?selectableItemBackground"
+    android:gravity="top"
+    android:elevation="4dp"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/list_item_news_image"
+        android:scaleType="centerCrop"
+        android:layout_weight="2"
+        android:elevation="4dp"
+        android:src="@drawable/no_image_available"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+                android:id="@+id/list_item_news_heading"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:text="Heading"
+                style="@style/ListItemTextHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/list_item_news_date"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:text="Date"
+                android:layout_gravity="right"
+                style="@style/ListItemTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
